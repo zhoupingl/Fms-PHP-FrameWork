@@ -5,6 +5,8 @@ define('FMS_ROOT', __DIR__);
 define('FMS_CORE', FMS_ROOT . '/Core');
 define('FMS_APP', FMS_ROOT . '/App');
 define('FMS_CACHE', FMS_APP . '/Cache');
+define('FMS_VIEW', FMS_APP . '/View');
+define('FMS_TWIG', false);
 define('FMS_MODULE', 'App');
 define('FMS_DEBUG', true);
 

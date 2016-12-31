@@ -83,6 +83,13 @@ class Fms
             }
         }
 
+        if (!FMS_TWIG) {
+//            extract($this->assigns);
+            $file = FMS_VIEW . '/' . $file . '.php';
+            include $file;
+            return;
+        }
+
         // Twig模板.
         $loader = new \Twig_Loader_Filesystem(FMS_APP . '/View');
         $twig = new \Twig_Environment($loader, array(
@@ -90,5 +97,6 @@ class Fms
             'debug' => FMS_DEBUG,
         ));
         echo $twig->render($file . '.php', !empty($this->assigns) ? $assigns : []);
+        return;
     }
 }
