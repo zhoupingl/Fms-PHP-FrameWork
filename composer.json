@@ -1,0 +1,19 @@
+{
+  "name" : "FMS PHP",
+  "description": "PHP Framework",
+  "type": "Framework",
+  "keywords" : [
+    "PHP", "PHP Framework"
+  ],
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "filp/whoops": "*",
+    "catfan/Medoo" : "*"
+  }
+}
