@@ -84,7 +84,7 @@ class Fms
         }
 
         if (!FMS_TWIG) {
-//            extract($this->assigns);
+            extract($this->assigns);
             $file = FMS_VIEW . '/' . $file . '.php';
             include $file;
             return;
